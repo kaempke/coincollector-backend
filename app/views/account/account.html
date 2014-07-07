@@ -1,0 +1,33 @@
+<div class="main" ng-controller="AccountCtrl">
+  <div class="main__header" ng-include="'views/header.html'"></div>
+  <div class="account">
+    <div class="account__header">
+      <div class="account-header">
+        <span class="account-header__mail">{{email}}</span>
+        <span class="account-header__konto">Ihr Kontostand beträgt <span class="red-title">{{coins}}</span> Punkte</span>
+      </div>
+    </div>
+    <div class="account__content">
+
+      <div class="content">
+
+        <div class="content__pointgroup" ng-repeat="praemie in praemien">
+          <div class="pointgroup">
+            <span class="red-title">&nbsp;&nbsp;&nbsp;&nbsp;{{praemie.coin}}</span> Punkte
+          </div>
+          <div class="pointgroup__praemien">
+           <center>
+            <div class="praemien">
+              <div class="praemien__logo"><img ng-src="{{praemie.url}}" height="250"/></div>
+              <div class="praemien__text" ><b>{{praemie.name}}</b><br/>{{praemie.text}}</div>
+            </div>
+          </center>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="main__footer" ng-include="'views/footer.html'"></div>
+</div>

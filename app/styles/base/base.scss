@@ -1,0 +1,20 @@
+@import "base/colors";
+@import "base/fonts";
+
+body {
+  padding: 10px;
+  background-color: $background-color;
+  font: $font;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+a {
+  font-weight: bold;
+  color: $gray1;
+  &:hover {
+    text-decoration: none;
+    color: $red;
+  };
+}
+

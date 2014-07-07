@@ -1,0 +1,37 @@
+@import "base/colors";
+@each $class in header, info, link, footer {
+  .main__#{$class} {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.main {
+    border: 1px solid #CCC;
+    overflow: hidden;
+}
+
+.main__header {
+  padding:20px;
+}
+
+.main__info {
+  padding-top:50px;
+}
+
+.main__recommendation {
+  padding:100px;
+}
+
+.main__footer {
+  float:right;
+  display:inline-block;
+}
+
+input {
+  margin:10px;
+}
+
+.red-title {
+  color: $red;
+}

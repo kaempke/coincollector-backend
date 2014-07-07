@@ -7,7 +7,10 @@
 package de.hypoport.caching.dao;
 
 import de.hypoport.caching.rest.User;
+
+import java.sql.SQLException;
 import java.util.Collection;
+import java.util.List;
 
 /**
  *
@@ -25,5 +28,7 @@ public interface IUserDao {
 
 
   void removeAllUser();
+
+	List<Praemie> getPraemien() throws SQLException;
   
 }

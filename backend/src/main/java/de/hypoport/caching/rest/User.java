@@ -5,71 +5,47 @@
  */
 package de.hypoport.caching.rest;
 
-import java.util.List;
-
 /**
- *
+ * 
  * @author steffen.kaempke
  */
 public class User {
 
-  private String imei;
+	private String werber;
+	private String neukunde;
+	private String comment;
+	private int coins;
 
-  private long coins;
+	public int getCoins() {
+		return coins;
+	}
 
-  private List<ElementEnum> elemente;
+	public void setCoins(int coins) {
+		this.coins = coins;
+	}
 
-  public User(String imei) {
-    this.imei = imei;
-  }
+	public String getWerber() {
+		return werber;
+	}
 
-  public User() {
+	public void setWerber(String werber) {
+		this.werber = werber;
+	}
 
-  }
+	public String getNeukunde() {
+		return neukunde;
+	}
 
-  public String getImei() {
-    return imei;
-  }
+	public void setNeukunde(String neukunde) {
+		this.neukunde = neukunde;
+	}
 
-  public void setImei(String imei) {
-    this.imei = imei;
-  }
+	public String getComment() {
+		return comment;
+	}
 
-  public long getCoins() {
-    return coins;
-  }
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
 
-  public void setCoins(long coins) {
-    this.coins = coins;
-  }
-
-  public List<ElementEnum> getElemente() {
-    return elemente;
-  }
-
-  public void setElemente(List<ElementEnum> elemente) {
-    this.elemente = elemente;
-  }
-
-  @Override
-  public int hashCode() {
-    int hash = 3;
-    hash = 89 * hash + (this.imei != null ? this.imei.hashCode() : 0);
-    return hash;
-  }
-
-  @Override
-  public boolean equals(Object obj) {
-    if (obj == null) {
-      return false;
-    }
-    if (getClass() != obj.getClass()) {
-      return false;
-    }
-    final User other = (User) obj;
-    if ((this.imei == null) ? (other.imei != null) : !this.imei.equals(other.imei)) {
-      return false;
-    }
-    return true;
-  }
 }

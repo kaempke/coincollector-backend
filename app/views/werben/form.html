@@ -1,0 +1,27 @@
+<center>
+  <div class="werbe-form">
+  <div class="werbe-form__image">
+    <img src="images/Bild4.jpg"/>
+  </div>
+  <div class="werbe-form__form">
+    <div class="form">
+      <div class="form__title">
+        <div class="title"><span class="red-title">Jetzt</span> empfehlen und Prämien sichern</div>
+      </div>
+      <div>
+        <form class="form__formular" ng-controller="FormCtrl">
+          <label>Ihre E-Mail Adresse</label> 
+          <input type="mail" ng-model="form.werber"/><br/>
+          <label>Die Adresse Ihres Bekannten</label> 
+          <input type="mail" ng-model="form.neukunde"/><br/>
+          <label>Kommentar</label> 
+          <input type="textfield" ng-model="form.comment" width="100"/>
+          <div><input type="submit" ng-click="submit()" value="Jetzt absenden" class="redbox"/></div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</center>

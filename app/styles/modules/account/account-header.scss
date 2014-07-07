@@ -1,0 +1,17 @@
+@import "base/colors";
+
+.account-header {
+  border-top: 2px solid #CCC;
+  border-bottom: 2px solid #CCC;
+  font-size: 20px;
+  font-weight: bold;
+  color: $gray1;
+}
+
+.account-header__info {
+  float: left;
+}
+
+.account-header__konto {
+  float: right;
+}

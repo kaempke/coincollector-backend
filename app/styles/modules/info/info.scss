@@ -1,0 +1,23 @@
+@each $class in werben, praemien, program, howto {
+  .info__#{$class} {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.info__werben {
+  padding-bottom: 50px;
+}
+
+.info__praemien {
+  display:inline-block;
+  padding-bottom: 50px;
+}
+
+.info__program {
+  padding-bottom: 50px;
+}
+
+.info__howto {
+  padding-bottom: 50px;
+}

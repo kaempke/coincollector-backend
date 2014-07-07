@@ -1,19 +1,30 @@
 'use strict';
-
-angular
-  .module('coincollectorApp', [
+var coincollectorApp = angular.module('coincollectorApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'ngAnimate'
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/info', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/empfehlung', {
+        templateUrl: 'views/recommendation.html',
+        controller: 'RecommendationCtrl'
+      })
+      .when('/account/:email', {
+        templateUrl: 'views/account/account.html',
+        controller: 'AccountCtrl'
+      })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/info'
       });
   });
+
+
+
+
